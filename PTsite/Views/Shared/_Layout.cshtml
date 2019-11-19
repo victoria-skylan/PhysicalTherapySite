@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Professional Physcial Therapy & Sports Medicine</title>
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -22,6 +23,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Patient Portal", "PatientLogin", "Patient")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
@@ -31,7 +33,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - ORROCK / MENDENHALL</p>
         </footer>
     </div>
 
@@ -40,3 +42,13 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+<style>
+    body {
+        font-family: 'Alata', sans-serif;
+    }
+
+    ul li {
+        color: white;
+    }
+</style>

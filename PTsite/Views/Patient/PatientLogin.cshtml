@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "PatientLogin";
+}
+
+<h2>Patient Login</h2>
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+<form>
+    <div class="form-group card">
+        <label for="inputEmail">Email address: </label>
+        @Html.TextBox("Email address")
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password: </label>
+        @Html.Password("Password")
+    </div>
+    <button class="btn btn-default" type="submit">Login</button>
+    @*add google auth button*@
+</form>
+}
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        margin: auto;
+        width: 50%;
+        border: 1px solid #c4c4c4;
+        padding: 10px;
+        text-align: center;
+        border-radius: 25px;
+    }
+</style>
+
